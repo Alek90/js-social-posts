@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: darkolivegreen;
+}
+
+#page_header{
+    text-align: center;
+    padding: 30px;
+    background-color: antiquewhite;
+}
+
+.post{
+    width: 45%;
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: antiquewhite;
+}
+
+.post_header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.post_header > img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.published{
+    margin: 0 20px;
+}
+
+.post_main > img{
+    width: 100%;
+}
+
+.post_footer{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

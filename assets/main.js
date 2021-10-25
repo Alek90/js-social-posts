@@ -10,38 +10,44 @@
 
 const posts = [
     {
-        identity: "",
+        identity: "WOW",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quas, beatae delectus illum non natus modi doloremque fugiat, quibusdam laborum eveniet porro a placeat blanditiis nihil facilis repudiandae possimus suscipit, commodi alias amet earum! Doloremque.",
         image: "https://i.picsum.photos/id/1022/367/267.jpg?hmac=0mbNHdQLUp_d5Cat6xNrL06S_07ikrdfLb6FDKJuir4",
         writer: "Da'thral",
         imgAvatar: "https://lodisseadelmaster.altervista.org/wp-content/uploads/2016/10/classe-di-prestigio-nano-dd-3.5-500x375.png",
         likes: 86,
-        creationDate: "today"
+        creationDate: Date(2020, 10)
     },
     {
-        identity: "",
+        identity: "WAW",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate maiores inventore nobis animi suscipit magni, quis eveniet corporis!",
         image: "https://i.picsum.photos/id/1003/367/267.jpg?hmac=1VHS13exKZ5QWJdtDTu0iCUTBZKCE_clSpR-wc3PW3g",
         writer: "Dak'dros",
+        imgAvatar: "https://lodisseadelmaster.altervista.org/wp-content/uploads/2016/10/classe-di-prestigio-nano-dd-3.5-500x375.png",
         likes: 120,
         creationDate: "today"
     },
     {
-        identity: "",
+        identity: "WEW",
         content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod placeat dignissimos voluptates consectetur soluta, alias repellat! Aperiam fuga non adipisci ex sunt quos, nisi in amet cumque qui officiis dolores labore rem ea unde excepturi dignissimos omnis, exercitationem tempore, dolorem eveniet? Voluptates veniam omnis error.",
         image: "https://i.picsum.photos/id/1015/367/267.jpg?hmac=mjgo8WXn4uxkZ_GhSDNN7rUSzP9jgyPBsHrDF02oU-o",
         writer: "Du-bur",
+        imgAvatar: "https://lodisseadelmaster.altervista.org/wp-content/uploads/2016/10/classe-di-prestigio-nano-dd-3.5-500x375.png",
         likes: 97,
         creationDate: "today"
     }
 ]
 
 
+
+let postsThatILike = [];
+
+// Mandare a schermo i post per ogni oggetto dell'array posts:
+
 for (i=0; i<posts.length; i++) {
 
     const post = posts[i];
-    console.log(post);
-
+    
     const postPrinted = `
 
         <div class="post">
@@ -61,14 +67,17 @@ for (i=0; i<posts.length; i++) {
             </main>
 
             <footer class="post_footer">
-                <div class="add_like">Mi Piace</div>
-                <div class="total_like">${post.likes} like</div>
+                <button class="add_like">Mi Piace</button>
+                <div class="total_like">Piace a ${post.likes} persone</div>
             </footer>
 
         </div>
 
-        `
-        document.querySelector(".container").insertAdjacentHTML("beforebegin", postPrinted)
+    `
+    document.querySelector(".container").insertAdjacentHTML("beforebegin", postPrinted);
 
-    console.log(postPrinted);
 }
+
+
+
+

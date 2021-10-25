@@ -11,8 +11,8 @@
 const posts = [
     {
         identity: "",
-        content: "https://i.picsum.photos/id/1022/367/267.jpg?hmac=0mbNHdQLUp_d5Cat6xNrL06S_07ikrdfLb6FDKJuir4",
-        image: "",
+        content: "",
+        image: "https://i.picsum.photos/id/1022/367/267.jpg?hmac=0mbNHdQLUp_d5Cat6xNrL06S_07ikrdfLb6FDKJuir4",
         writer: "Da'thral",
         imgAvatar: "https://lodisseadelmaster.altervista.org/wp-content/uploads/2016/10/classe-di-prestigio-nano-dd-3.5-500x375.png",
         likes: 86,
@@ -62,7 +62,7 @@ for (i=0; i<posts.length; i++) {
 
             <footer class="post_footer">
                 <div class="add_like">""</div>
-                <div class="total_like">${post.likes}</div>
+                <div class="total_like">${post.likes} like</div>
             </footer>
 
         </div>

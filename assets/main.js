@@ -43,8 +43,30 @@ for (i=0; i<posts.length; i++) {
     console.log(post);
 
     const postPrinted = `
-        
-    
-    
+
+        <div class="post">
+
+            <header class="post_header">
+                <img src="${post.imgAvatar}" alt="">
+                <section class="published">
+                    <h4>"${post.writer}"</h4>
+                    <div>"${post.creationDate}"</div>
+                </section>
+
+            </header>
+
+            <main class="post_main">
+                <p>"${post.content}"</p>
+                <img src="${post.image}" alt="">
+            </main>
+
+            <footer class="post_footer">
+                <div class="add_like">""</div>
+                <div class="total_like">${post.likes}</div>
+            </footer>
+
+        </div>
     `
+
+    console.log(postPrinted);
 }

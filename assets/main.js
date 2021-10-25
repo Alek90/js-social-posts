@@ -16,5 +16,13 @@ const post = [
         writer: "",
         likes: "",
         creationDate: ""
+    },
+    {
+        identity: "",
+        content: "",
+        image: "",
+        writer: "",
+        likes: "",
+        creationDate: ""
     }
 ]

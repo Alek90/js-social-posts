@@ -3,3 +3,18 @@
     Gli attributi minimi del modello di un post: id, contenuto, immagine, autore (nome, avatar), numero di likes, data creazione.
     Un secondo array conterrà solo gli id dei posts a cui abbiamo dato like.
 */
+
+
+
+//  Array di oggetti per post:
+
+const post = [
+    {
+        identity: "",
+        content: "",
+        image: "",
+        writer: "",
+        likes: "",
+        creationDate: ""
+    }
+]
